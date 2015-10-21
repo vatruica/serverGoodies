@@ -1,0 +1,11 @@
+# clear RAM cache
+clearRamCache="sync && echo 3 > /proc/sys/vm/drop_caches"
+
+# clear swap
+clearSwapSpace="swapoff -a && swapon -a"
+
+# see apps currently using the internet
+alias appnet="lsof -P -i -n"
+
+# test dwd speed
+alias testspeed="wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip"
